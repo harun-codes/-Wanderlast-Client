@@ -11,7 +11,7 @@ const AllDestinationPages = async () => {
 
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_UR}/destinations`,
+      `${process.env.NEXT_PUBLIC_API_URL}/destinations`,
       {
         cache: "no-store",
       }

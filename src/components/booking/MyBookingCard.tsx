@@ -76,7 +76,7 @@ const MyBookingCard = ({
 
         try {
             const res = await fetch(
-                `${process.env.NEXT_PUBLIC_API_UR}/my-bookings/${booking._id}`,
+                `${process.env.NEXT_PUBLIC_API_URL}/my-bookings/${booking._id}`,
                 {
                     method: "DELETE",
                 }

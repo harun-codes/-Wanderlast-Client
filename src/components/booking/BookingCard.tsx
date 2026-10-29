@@ -31,7 +31,7 @@ const BookingCard = ({destination} : {destination: IDestination}) => {
             bookingDate: new Date()
         }
 
-        const res = await fetch (`${process.env.NEXT_PUBLIC_API_UR}/bookings`,{
+        const res = await fetch (`${process.env.NEXT_PUBLIC_API_URL}/bookings`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

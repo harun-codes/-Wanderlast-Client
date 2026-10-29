@@ -66,7 +66,7 @@ const EditDestinationDialog = ({ destination } : {destination: IDestination}) =>
     const token = await getTokenFromClient();
 
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_UR}/destinations/${destination._id}`,
+      `${process.env.NEXT_PUBLIC_API_URL}/destinations/${destination._id}`,
       {
         method: "PATCH",
         headers: {

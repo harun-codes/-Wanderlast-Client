@@ -10,7 +10,7 @@ async function FeaturedDestinations() {
   let destinations: IDestination[];
 
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_UR}/featured-destinations`,);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/featured-destinations`,);
     if (!response.ok) throw new Error("Failed to load featured destinations");
     destinations = await response.json();
     if (!Array.isArray(destinations)) throw new Error("Invalid destinations");
